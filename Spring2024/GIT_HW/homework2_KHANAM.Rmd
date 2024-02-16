@@ -72,6 +72,17 @@ for (size in sample_sizes) {
   hist(means, main = paste("Sample size =", size), xlab = "Means", col = "lightblue")
 }
 ```
+```{r}
+#Problem 3. Method 1
+output <- vector("double", ncol(mtcars))
+for (i in seq_along(mtcars)) {
+  output[i] <- sd(mtcars[[i]])
+}
+output
+
+# Method 2
+sapply(mtcars, sd)
+```
 
 
 
