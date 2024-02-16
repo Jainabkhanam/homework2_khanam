@@ -28,3 +28,10 @@ map_dbl(dt, mean)
 map_dbl(dt, sd)
 
 ```
+```{r}
+# 1_c: Use map function to calculate the square root of each value of each column
+map(dt, sqrt)
+```
+
+
+
