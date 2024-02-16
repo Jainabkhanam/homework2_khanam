@@ -23,3 +23,8 @@ dt <- tribble(
 map_dbl(dt, mean)
 ```
 
+```{r}
+# 1_b: Use map function to find the standard deviation of each column
+map_dbl(dt, sd)
+
+```
